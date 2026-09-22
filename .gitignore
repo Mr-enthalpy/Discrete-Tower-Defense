@@ -15,7 +15,7 @@ Desktop.ini
 !.env.example
 *.local
 
-# Local output; engine-specific rules follow engine selection
+# Local output
 /build/
 /dist/
 /out/
@@ -23,3 +23,10 @@ Desktop.ini
 /logs/
 /coverage/
 *.log
+
+# Godot and .NET generated state
+.godot/
+**/bin/
+**/obj/
+**/TestResults/
+/game/client/generated/
