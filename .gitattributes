@@ -1,0 +1,21 @@
+* text=auto eol=lf
+
+*.md text
+*.json text
+*.yml text
+*.yaml text
+*.svg text
+
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.ico binary
+*.wav binary
+*.ogg binary
+*.mp3 binary
+*.ttf binary
+*.otf binary
+*.woff2 binary
+*.pdf binary
+*.zip binary

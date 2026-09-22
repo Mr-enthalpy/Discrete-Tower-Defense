@@ -1,0 +1,25 @@
+# Operating system and editor-local state
+.DS_Store
+Thumbs.db
+Desktop.ini
+.idea/
+.vs/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+*.local
+
+# Local output; engine-specific rules follow engine selection
+/build/
+/dist/
+/out/
+/tmp/
+/logs/
+/coverage/
+*.log
