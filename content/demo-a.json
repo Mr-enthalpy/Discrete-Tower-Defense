@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "map": [
+    "........................",
+    "........................",
+    "......###...............",
+    "......###......##.......",
+    "=====..........##.......",
+    ".....====...............",
+    ".........====...........",
+    ".............=====......",
+    "..................==....",
+    "............======......",
+    ".......=====............",
+    "=====...................",
+    ".......##.....###.......",
+    ".......##.....###.......",
+    "........................",
+    "........................"
+  ],
+  "coreX": 20, "coreY": 8, "entranceRows": [4,11],
+  "initialGold": 180, "coreHealth": 650, "income": 4, "incomeInterval": 2,
+  "daySeconds": 20, "nightSeconds": 35,
+  "tower": {"cost":45,"refund":27,"health":145,"range":4.8,"damage":12,"cooldown":0.28,"projectileSpeed":18,"capacitor":8,"shotEnergy":2,"chargePower":12},
+  "enemy": {"id":"enemy.marcher","variants":[
+    {"id":"small","health":32,"speed":1.05,"damage":9,"radius":0.18},
+    {"id":"medium","health":88,"speed":0.72,"damage":17,"radius":0.29}
+  ]},
+  "waves": [
+    {"count":24,"interval":1.15,"mediumEvery":6},
+    {"count":38,"interval":0.78,"mediumEvery":4},
+    {"count":54,"interval":0.55,"mediumEvery":3}
+  ]
+}

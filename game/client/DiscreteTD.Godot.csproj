@@ -1,0 +1,14 @@
+<Project Sdk="Godot.NET.Sdk/4.7.2">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <EnableDynamicLoading>true</EnableDynamicLoading>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../simulation/DiscreteTD.Simulation.csproj" />
+    <ProjectReference Include="../content/DiscreteTD.Content.csproj" />
+  </ItemGroup>
+  <Target Name="PrepareDemoContent" BeforeTargets="BeforeBuild">
+    <MakeDir Directories="$(MSBuildProjectDirectory)/generated" />
+    <Copy SourceFiles="$(MSBuildProjectDirectory)/../../content/demo-a.json" DestinationFolder="$(MSBuildProjectDirectory)/generated" />
+  </Target>
+</Project>
