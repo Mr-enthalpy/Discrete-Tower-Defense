@@ -2,7 +2,7 @@
 
 ## 项目依据
 
-先亲自阅读 docs/README.md 及 docs/baseline/v1.0 下相关设计原文；架构和交接等奠基文档不得委派摘要代替阅读。用户提供的 v1.0 基线优先于 docs/archive 中旧设计；冲突处理和未定项见 docs/decisions/0002-设计基线迁移.md。
+先亲自阅读 docs/README.md 及 docs/baseline/v1.0 下相关设计原文；架构和交接等奠基文档不得委派摘要代替阅读。用户提供的 v1.0 基线优先于 docs/archive 中旧设计；迁移见 docs/decisions/0002-设计基线迁移.md；后续用户修订 docs/decisions/0003-敌人体型与白天保留战场.md 优先于 v1.0，尤其不能沿用黎明清场。
 
 当前交付为文档与模块骨架，无可运行游戏。技术为 Windows 优先 Godot .NET＋纯 C# Simulation；实际版本、项目和依赖在工具链探针后建立。制作使用 A–F 切片，M/P/V 仅指游戏等级。不要自动沿用旧数值、敌名、相同瓦数公平或单一电容模型。
 
