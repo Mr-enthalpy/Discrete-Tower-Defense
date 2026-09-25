@@ -1,0 +1,300 @@
+{
+  "schemaVersion": 2,
+  "map": [
+    "################################",
+    "#......######..................#",
+    "#::::::######:::...............#",
+    "A:::::::::::::::....###........#",
+    "A::::...::::::::....###........#",
+    "A::::...::::::::::::###........#",
+    "A::::...::::::...::::::........#",
+    "A:::::::::::::...:::::::.......#",
+    "#:::::::::::::...:::::::.......#",
+    "#.......######::::::::::.......#",
+    "#.......######::::::::::.......#",
+    "#..###.::::::::...::::::.......#",
+    "#..###.::::::::...::::::.......#",
+    "#..###.::...:::...::::::.......#",
+    "#......::...:::::::::::........#",
+    "#...:::::...::::::..###........#",
+    "#...::::::::::::::..###........#",
+    "#...::::::::::::::..###........#",
+    "#...:::::::::..................#",
+    "######BBBBB#####################"
+  ],
+  "coreX": 26,
+  "coreY": 10,
+  "initialGold": 180,
+  "coreHealth": 650,
+  "income": 4,
+  "incomeInterval": 2,
+  "daySeconds": 20,
+  "nightSeconds": 35,
+  "tower": {
+    "cost": 45,
+    "refund": 27,
+    "health": 145,
+    "range": 4.8,
+    "damage": 12,
+    "cooldown": 0.28,
+    "projectileSpeed": 18,
+    "capacitor": 8,
+    "shotEnergy": 2,
+    "chargePower": 12
+  },
+  "enemy": {
+    "id": "enemy.marcher",
+    "variants": [
+      {
+        "id": "small",
+        "health": 32,
+        "speed": 1.05,
+        "damage": 9,
+        "radius": 0.18
+      },
+      {
+        "id": "medium",
+        "health": 88,
+        "speed": 0.72,
+        "damage": 17,
+        "radius": 0.29
+      }
+    ]
+  },
+  "waves": [
+    {
+      "detachments": [
+        {
+          "id": "n1-1",
+          "frontId": "A",
+          "count": 8,
+          "startSeconds": 0,
+          "spawnWindow": 2,
+          "mediumEvery": 6
+        },
+        {
+          "id": "n1-2",
+          "frontId": "B",
+          "count": 8,
+          "startSeconds": 7,
+          "spawnWindow": 2,
+          "mediumEvery": 6
+        },
+        {
+          "id": "n1-3",
+          "frontId": "A",
+          "count": 4,
+          "startSeconds": 15,
+          "spawnWindow": 2,
+          "mediumEvery": 6
+        },
+        {
+          "id": "n1-4",
+          "frontId": "B",
+          "count": 4,
+          "startSeconds": 15,
+          "spawnWindow": 2,
+          "mediumEvery": 6
+        }
+      ]
+    },
+    {
+      "detachments": [
+        {
+          "id": "n2-1",
+          "frontId": "A",
+          "count": 12,
+          "startSeconds": 0,
+          "spawnWindow": 2,
+          "mediumEvery": 4
+        },
+        {
+          "id": "n2-2",
+          "frontId": "B",
+          "count": 12,
+          "startSeconds": 7,
+          "spawnWindow": 2,
+          "mediumEvery": 4
+        },
+        {
+          "id": "n2-3",
+          "frontId": "A",
+          "count": 6,
+          "startSeconds": 15,
+          "spawnWindow": 2,
+          "mediumEvery": 4
+        },
+        {
+          "id": "n2-4",
+          "frontId": "B",
+          "count": 6,
+          "startSeconds": 15,
+          "spawnWindow": 2,
+          "mediumEvery": 4
+        }
+      ]
+    },
+    {
+      "detachments": [
+        {
+          "id": "n3-1",
+          "frontId": "A",
+          "count": 16,
+          "startSeconds": 0,
+          "spawnWindow": 2,
+          "mediumEvery": 3
+        },
+        {
+          "id": "n3-2",
+          "frontId": "B",
+          "count": 16,
+          "startSeconds": 7,
+          "spawnWindow": 2,
+          "mediumEvery": 3
+        },
+        {
+          "id": "n3-3",
+          "frontId": "A",
+          "count": 8,
+          "startSeconds": 15,
+          "spawnWindow": 2,
+          "mediumEvery": 3
+        },
+        {
+          "id": "n3-4",
+          "frontId": "B",
+          "count": 8,
+          "startSeconds": 15,
+          "spawnWindow": 2,
+          "mediumEvery": 3
+        }
+      ]
+    }
+  ],
+  "terrains": [
+    {
+      "id": "contested_ground",
+      "symbol": ".",
+      "enemyPassable": true,
+      "permanentBuildable": true,
+      "blocksMovement": false,
+      "blocksFire": false
+    },
+    {
+      "id": "enemy_maneuver_ground",
+      "symbol": ":",
+      "enemyPassable": true,
+      "permanentBuildable": false,
+      "blocksMovement": false,
+      "blocksFire": false
+    },
+    {
+      "id": "barrier",
+      "symbol": "#",
+      "enemyPassable": false,
+      "permanentBuildable": false,
+      "blocksMovement": true,
+      "blocksFire": true
+    },
+    {
+      "id": "front_a",
+      "symbol": "A",
+      "enemyPassable": true,
+      "permanentBuildable": false,
+      "blocksMovement": false,
+      "blocksFire": false
+    },
+    {
+      "id": "front_b",
+      "symbol": "B",
+      "enemyPassable": true,
+      "permanentBuildable": false,
+      "blocksMovement": false,
+      "blocksFire": false
+    }
+  ],
+  "regions": [
+    {
+      "id": "northwest",
+      "name": "西北战区",
+      "x": 0,
+      "y": 0,
+      "width": 23,
+      "height": 10
+    },
+    {
+      "id": "south",
+      "name": "南部战区",
+      "x": 0,
+      "y": 10,
+      "width": 23,
+      "height": 10
+    },
+    {
+      "id": "base",
+      "name": "核心阵地",
+      "x": 23,
+      "y": 0,
+      "width": 9,
+      "height": 20
+    }
+  ],
+  "fronts": [
+    {
+      "id": "A",
+      "regionId": "northwest",
+      "cells": [
+        {
+          "x": 0,
+          "y": 3
+        },
+        {
+          "x": 0,
+          "y": 4
+        },
+        {
+          "x": 0,
+          "y": 5
+        },
+        {
+          "x": 0,
+          "y": 6
+        },
+        {
+          "x": 0,
+          "y": 7
+        }
+      ]
+    },
+    {
+      "id": "B",
+      "regionId": "south",
+      "cells": [
+        {
+          "x": 6,
+          "y": 19
+        },
+        {
+          "x": 7,
+          "y": 19
+        },
+        {
+          "x": 8,
+          "y": 19
+        },
+        {
+          "x": 9,
+          "y": 19
+        },
+        {
+          "x": 10,
+          "y": 19
+        }
+      ]
+    }
+  ],
+  "space": {
+    "crushDamagePerSecond": 24,
+    "dawnProtectionSeconds": 2
+  }
+}

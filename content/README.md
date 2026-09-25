@@ -1,6 +1,6 @@
 # 内容数据
 
-未来规则采用 UTF-8 JSON、显式 schemaVersion/单位/稳定 ID，由 Content 加载。当前只有[标准内容库登记](../docs/design/内容库.md)，没有已平衡数值表；旧试跑数值已归档，不作为默认值。
+未来规则采用 UTF-8 JSON、显式 schemaVersion/单位/稳定 ID，由 Content 加载。当前包含 schemaVersion 2 的 demo-a.json 实验场景（独立地形属性、区域、出生面、分队时序、挤压与黎明保护参数）和[标准内容库登记](../docs/design/内容库.md)，没有已平衡数值表；旧试跑数值已归档，不作为默认值。
 
 后续按实际切片增加 facilities、abilities、upgrades、recipes、rituals、enemies、legions、anomalies、weather、maps、scenarios。定义/实例/表现映射分离；数值仅一处权威来源。新增行为使用强类型判别，不以名称猜机制。
 

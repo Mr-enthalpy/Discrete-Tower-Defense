@@ -1,6 +1,6 @@
 # DiscreteTD.Godot
 
-计划 Godot .NET 宿主，无 project.godot 或 C# 工程。负责窗口、输入、相机、UI、音效、呈现映射、资源与文件适配；引用 Simulation 和 Content。
+已实现 Godot .NET 宿主和程序绘制的 DEMO A。负责窗口、输入、相机、UI、音效、呈现映射、资源与文件适配；引用 Simulation 和 Content。
 
 单一模拟时钟驱动固定步，显示插值；不能在节点里另跑伤害、Q 收支或波次。读取只读状态，提交有序命令。依照元技能执行信息屏蔽/工程拒绝，但暂停、相机、设置、退出和辅助选项永远可用；无效点击不排队。
 
